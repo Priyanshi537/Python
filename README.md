@@ -77,3 +77,6 @@ Name: 2, dtype: object
 0    A   20     85    True
 3    D   23     88    True
 1    B   21     90    True
+
+
+
