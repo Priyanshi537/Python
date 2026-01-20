@@ -55,3 +55,59 @@ df["Passed"] = df["Marks"] >= 80
 print(df)
 
 print(df.sort_values("Marks"))
+
+
+Code-3
+
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y = [10, 20, 25, 30, 35]
+
+# Line graph
+plt.figure()
+plt.plot(x, y)
+plt.title("Line Graph")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.savefig("line_graph.png")
+plt.close()
+
+# Bar chart
+plt.figure()
+plt.bar(x, y)
+plt.title("Bar Chart")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.savefig("bar_chart.png")
+plt.close()
+
+# Scatter plot
+plt.figure()
+plt.scatter(x, y)
+plt.title("Scatter Plot")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.savefig("scatter_plot.png")
+plt.close()
+
+# Pie chart
+labels = ["A", "B", "C", "D"]
+sizes = [30, 25, 25, 20]
+
+plt.figure()
+plt.pie(sizes, labels=labels, autopct="%1.1f%%")
+plt.title("Pie Chart")
+plt.savefig("pie_chart.png")
+plt.close()
+
+# Histogram
+data = [10, 20, 20, 30, 30, 30, 40, 50, 50]
+
+plt.figure()
+plt.hist(data)
+plt.title("Histogram")
+plt.xlabel("Values")
+plt.ylabel("Frequency")
+plt.savefig("histogram.png")
+plt.close()
